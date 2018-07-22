@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title >ATM</title>
+	</head>
+	<body style="background:darkgreen;margin: 0px">
+		<header style="background:green">
+			<center>
+				<h1 style="font-size: 100px;margin: 0px">Welcome to ATM</h1>
+			</center>
+	    </header>
+		<center style="font-size: 20px"><br><br>
+			<h1 >Your ATM number: {{atm_number}}</h1>
+			<br>
+			<br>
+			<h1 >Enter your PIN</h1>
+			<form action="http://localhost:5000/pin_auth" method="post">
+				<input type="text" name="atm_pin" style="height: 35px;width: 100px;font-size: 35px" ><br><br>
+				<input type="submit" style="height: 35px;font-size: 25px;background: gray">
+			</form>
+		</center>
+	</body>
+</html>

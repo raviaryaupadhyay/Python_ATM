@@ -1,0 +1,28 @@
+		<!DOCTYPE html>
+<html>
+	<head>
+		<title >ATM</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css')}}">
+	</head>
+	<body style="background:darkgreen;margin: 0px">
+<header style="background:green">
+			<center>
+				<h1 style="font-size: 100px;margin: 0px">Welcome to ATM</h1>
+			</center>
+	    </header>
+	    <center><h1>Your atm number :{{ atm_number }}</h1></center>
+	    <div style="font-size: 20px;text-decoration: none;text-align: left;padding-left: 100px;display: inline-block;" >	
+			<h2><a href="/deposite_auth" style="text-decoration: none;background: green;background-size: contain;" >Deposit</a></h2><br>
+			<h2><a href="/transfer_page" style="text-decoration: none ;background: green;">Transfer</a></h2><br>
+			<h2><a href="/pin_change_page" style="text-decoration: none;background: green">PIN Change</a></h2><br>
+			<!--<h2><a href="/fast_cash" style="text-decoration: none;background: green">Fast Cash</a></h2><br>-->
+		</div>
+		<div style="font-size: 20px;text-decoration: none;text-align: right;padding-right:100px;display:inline-block;padding-left: 750px">
+			<h2><a href="/withdrawal_page" style="text-decoration: none;background: green">Withdrawal</a></h2><br>
+			<h2><a href="/enquiry" style="text-decoration: none;background: green">Balance Enquiry</a></h2><br>
+			<!--<h2><a href="/mini" style="text-decoration: none;background: green">MINI Statement</a></h2><br>-->
+			<h2><a href="/other" style="text-decoration: none;background: green">Other</a></h2><br>
+		</div>
+		
+	</body>
+</html>
